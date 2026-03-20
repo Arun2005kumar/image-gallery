@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Colorful Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🌈 My Colorful Gallery</h1>
+
+<div class="gallery">
+  <img src="images/image1.jpeg" onclick="openLightbox(0)">
+  <img src="images/image2.jpeg" onclick="openLightbox(1)">
+  <img src="images/image3.jpeg" onclick="openLightbox(2)">
+  <img src="images/image4.jpeg" onclick="openLightbox(3)">
+  <img src="images/image5.jpeg" onclick="openLightbox(4)">
+  <img src="images/image6.jpeg" onclick="openLightbox(5)">
+  <img src="images/image7.jpeg" onclick="openLightbox(6)">
+</div>
+
+<!-- FULLSCREEN LIGHTBOX -->
+<div id="lightbox">
+  <span onclick="closeLightbox()">❌</span>
+  <img id="lightbox-img">
+  <button onclick="prevImage()">⬅️</button>
+  <button onclick="nextImage()">➡️</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
